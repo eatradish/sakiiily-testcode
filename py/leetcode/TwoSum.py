@@ -5,12 +5,12 @@ class Solution:
         :type target: int
         :rtype: List[int]
         """
-        d = {i:nums[i] for i in range(len(nums))}
-       # print(d)
+
+        d = {}
         for i in range(len(nums)):
-            del d[i]
             if target - nums[i] in d:
-                return [i, d[target - nums[i]]]
+                return [d[target - nums[i]], i]
+            d[nums[i]] = i
 
 
 t = Solution().twoSum([3,2,4], 6)
