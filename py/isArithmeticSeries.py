@@ -18,6 +18,7 @@ def my_sort(l: list) -> list:
 
 def my_sort_2(l: list) -> list:
     # <- try o(nlogn)
+    pass
 
 if __name__ == '__main__':
     print(isArithmeticSeries(my_sort([5,3,2,1,7,6,4,8,10,9])))
